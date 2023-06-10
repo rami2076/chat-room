@@ -6,5 +6,5 @@ const io: socketio.Server = new socketio.Server(server);
 
 io.on('connection', (socket: socketio.Socket) => console.log('connect'));
 
-const port = 5000;
+const port: number = 5000;
 server.listen(port, () => console.log(`app listening on port ${port}`));
